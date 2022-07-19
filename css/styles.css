@@ -438,7 +438,7 @@ footer .section {
 }
 footer .container {
   flex-direction: row;
-  column-gap: 70px;
+  justify-content: space-between;
 }
 
 .footer-logo-adress {
@@ -452,7 +452,8 @@ footer .container {
   flex-direction: column;
   row-gap: 20px;
 }
-.footer-social-links p {
+.footer-social-links p,
+.footer-submit p {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.17;
@@ -495,7 +496,63 @@ footer .container {
   color: #ffffff60;
   font-size: 14px;
 }
+.footer-submit {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
+  gap: 20px;
+}
+.footer-submit p {
+  text-transform: uppercase;
+}
+.footer-newsletter-submit-form-input {
+  height: 50px;
+  width: 358px;
+  background-color: rgba(47, 48, 58, 1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  color: #eee;
+  outline: none;
+  padding-left: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 1px;
+}
+.footer-newsletter-submit-form-input:focus {
+  border: none;
+  border: 1px solid rgb(255, 255, 255);
+}
+.footer-newsletter-submit-form-button {
+  height: 50px;
+  background-color: rgba(33, 150, 243, 1);
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  padding: 0px;
+  margin-left: 20px;
+}
+.footer-newsletter-submit-form-button:hover {
+  cursor: pointer;
+}
+.footer-newsletter-submit-form-button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.icon-send {
+  fill: var(--almost-white-color);
+}
 
+.footer-newsletter-submit-form-button-content span {
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.875;
+  letter-spacing: 2px;
+}
 /* PORTFOLIO  */
 
 .portfolio-buttons-elem {
