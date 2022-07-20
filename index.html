@@ -487,6 +487,74 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-button" data-modal-close>X</button>
+        <div class="modal-form-box">
+          <form
+            class="modal-form"
+            action=""
+            name="modal-order-form"
+            autocomplete="on"
+            novalidate
+          >
+            <p>Zostaw swoje dane w formularzu poniżej</p>
+            <div class="modal-form-inputs-box">
+              <ul class="modal-form-input-box-list">
+                <li class="modal-form-input-box-list-elem">
+                  <label class="modal-form-username">
+                    Imie
+                    <input
+                      class="modal-form-username-input"
+                      type="text"
+                      name="username"
+                    />
+                  </label>
+                </li>
+                <li class="modal-form-input-box-list-elem">
+                  <label for="" class="form-label-tel">
+                    Telefon
+                    <input
+                      class="modal-form-tel-input"
+                      type="tel"
+                      name="modal-form-telephone"
+                    />
+                  </label>
+                </li>
+                <li class="modal-form-input-box-list-elem">
+                  <label for="" class="modal-form-email">
+                    Email
+                    <input
+                      class="modal-form-email-input"
+                      type="email"
+                      name="modal-form-email"
+                  /></label>
+                </li>
+                <li class="modal-form-input-box-list-elem">
+                  <label
+                    for=""
+                    class="modal-form-comment"
+                    placeholder="Wprowadz tekst"
+                  >
+                    Komentarz
+                    <textarea
+                      class="modal-form-textarea-input"
+                      name="modal-form-comment"
+                      rows="10"
+                    ></textarea>
+                  </label>
+                </li>
+              </ul>
+            </div>
+            <label for="" name="modal-form-checkbox-statute">
+              <input
+                type="checkbox"
+                name="modal-form-checkbox"
+                value="accept"
+              />
+              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+              <a href="#">Politykę Prywatności</a>.
+            </label>
+            <button type="submit">Wyślij</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
