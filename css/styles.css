@@ -773,15 +773,26 @@ MODAL
   flex-direction: column;
   gap: 10px;
 }
+.modal-form-input-box-list-elem {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
 
-.modal-form-username-input,
-.modal-form-tel-input,
-.modal-form-email-input,
-.modal-form-textarea-input {
+.modal-form-input {
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
+}
+.modal-form-username-input,
+.modal-form-tel-input,
+.modal-form-email-input {
+  padding: 0 7%;
+}
+.modal-form-textarea-input {
+  padding: 2%;
+  max-width: 100%;
 }
 .modal-form-input-box-list-elem label textarea {
   height: 120px;
@@ -790,11 +801,21 @@ MODAL
   color: rgba(117, 117, 117, 1);
 }
 
-.modal-form-username-input:focus,
-.modal-form-tel-input:before {
+.modal-form-input:focus,
+.modal-form-input:hover {
   border: none;
-  border: 3px solid red;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid var(--brand-blue-color);
+  outline: none;
 }
-.modal input:focus {
-  border: 3px solid green;
+.icon-user,
+.icon-tel,
+.icon-modal-email {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+}
+.modal-form-input-box-list-elem:focus-within {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #2196f3;
 }
