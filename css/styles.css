@@ -836,6 +836,7 @@ MODAL
   border-radius: 1px;
 }
 .modal-form-checkbox-policy:checked + .modal-form-checkbox-policy-text::before {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--brand-blue-color);
   border: none;
   background-image: url(../images/user-policy.svg);
