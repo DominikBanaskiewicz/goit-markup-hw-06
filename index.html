@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -490,17 +489,18 @@
         <div class="modal-form-box">
           <form
             class="modal-form"
-            action=""
             name="modal-order-form"
             autocomplete="on"
             novalidate
           >
-            <p>Zostaw swoje dane w formularzu poniżej</p>
+            <p class="modal-form-name">
+              Zostaw swoje dane w formularzu poniżej
+            </p>
             <div class="modal-form-inputs-box">
               <ul class="modal-form-input-box-list">
                 <li class="modal-form-input-box-list-elem">
                   <label class="modal-form-username">
-                    Imie
+                    <p class="modal-form-label-name">Imie</p>
                     <input
                       class="modal-form-username-input modal-form-input"
                       type="text"
@@ -514,12 +514,14 @@
                   </label>
                 </li>
                 <li class="modal-form-input-box-list-elem">
-                  <label for="" class="form-label-tel">
-                    Telefon
+                  <label class="form-label-tel">
+                    <p class="modal-form-label-name">Telefon</p>
                     <input
                       class="modal-form-tel-input modal-form-input"
                       type="tel"
                       name="modal-form-telephone"
+                      minlength="9"
+                      maxlength="9"
                       placeholder="Numer telefonu"
                     />
                     <svg class="icon icon-tel" width="18" height="18">
@@ -528,8 +530,8 @@
                   </label>
                 </li>
                 <li class="modal-form-input-box-list-elem">
-                  <label for="" class="modal-form-email">
-                    Email
+                  <label class="modal-form-email">
+                    <p class="modal-form-label-name">Email</p>
                     <input
                       class="modal-form-email-input modal-form-input"
                       type="email"
@@ -542,8 +544,8 @@
                   </label>
                 </li>
                 <li class="modal-form-input-box-list-elem">
-                  <label for="" class="modal-form-comment">
-                    Komentarz
+                  <label class="modal-form-comment">
+                    <p class="modal-form-label-name">Komentarz</p>
                     <textarea
                       class="modal-form-textarea-input modal-form-input"
                       name="modal-form-comment"
@@ -554,15 +556,18 @@
                 </li>
               </ul>
             </div>
-            <label for="" name="modal-form-checkbox-statute">
+            <div class="modal-form-policy-div">
               <input
+                class="modal-form-checkbox-policy visually-hidden"
                 type="checkbox"
-                name="modal-form-checkbox"
-                value="accept"
+                name="user-policy"
+                id="user-policy"
               />
-              Oświadczam iż akceptuję <a href="#">Regulamin</a> i
-              <a href="#">Politykę Prywatności</a>.
-            </label>
+              <label class="modal-form-checkbox-policy-text" for="user-policy">
+                Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                <a href="#">Politykę Prywatności</a>.
+              </label>
+            </div>
             <button type="submit">Wyślij</button>
           </form>
         </div>
