@@ -759,10 +759,10 @@ MODAL
 .modal-form-inputs-box {
   display: flex;
   flex-direction: column;
-  height: 85%;
-  width: 85%;
   align-self: center;
   justify-self: center;
+  height: 85%;
+  width: 85%;
 }
 .modal-form-input-box-list {
   display: flex;
@@ -782,8 +782,13 @@ MODAL
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
-  display: flex;
   margin-top: 4px;
+}
+
+.modal-form-username-input,
+.modal-form-tel-input,
+.modal-form-email-input {
+  padding-left: 37px;
 }
 
 .modal-form-textarea-input {
@@ -791,6 +796,7 @@ MODAL
   padding: 12px 16px;
   font-size: 12px;
 }
+
 .modal-form-label-name,
 .modal-form-textarea-input::placeholder {
   color: rgba(117, 117, 117, 1);
@@ -801,11 +807,6 @@ MODAL
 .modal-form-textarea-input::placeholder {
   color: #75757580;
 }
-.modal-form-username-input,
-.modal-form-tel-input,
-.modal-form-email-input {
-  padding-left: 37px;
-}
 
 .modal-form-input:focus,
 .modal-form-input:hover {
@@ -814,11 +815,12 @@ MODAL
   border: 1px solid var(--brand-blue-color);
   outline: none;
 }
+
 .icon-user,
 .icon-tel,
 .icon-modal-email {
   position: absolute;
-  top: calc(50% + 3px);
+  top: calc(50% + 5px);
   left: 15px;
 }
 
@@ -826,9 +828,7 @@ MODAL
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: #2196f3;
 }
-.modal-form-policy-box {
-  height: fit-content;
-}
+
 .modal-form-checkbox-policy-text {
   display: flex;
   align-items: center;
